@@ -11,21 +11,8 @@ maths = float(input("Enter your Mathematics marks (out of 100): "))
 total_marks = physics + chemistry + maths
 percentage = total_marks / 3
 
-# 4.0 GPA Conversion Logic
-if percentage >= 90:
-    gpa = 4.0
-elif percentage >= 80:
-    gpa = 3.5
-elif percentage >= 70:
-    gpa = 3.0
-elif percentage >= 60:
-    gpa = 2.5
-else:
-    gpa = 2.0
-
 print("\n--- YOUR RESULTS ---")
 print(f"Your Overall Percentage is: {percentage:.2f}%")
-print(f"Your Calculated GPA is: {gpa:.2f} / 4.0")
 
 # 3. Computer decision block: Checking GKS-U Eligibility (80% cut-off)
 if percentage >= 80:
